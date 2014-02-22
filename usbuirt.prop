@@ -1,0 +1,8 @@
+{
+  "modules" : { 
+    "usbuirt"  : {
+      "description": "Envoie des commandes infra-rouge via le module USB-UIRT",
+      "version"    : "1.0"
+    }
+  }
+}

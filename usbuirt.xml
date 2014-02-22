@@ -1,0 +1,19 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleusbuirt" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleusbuirt" scope="public">
+    <example>Sarah allume la télé</example>
+    <tag>out.action=new Object(); </tag>
+    <item>Sarah</item>
+
+	<one-of>
+	<item>allume<tag>out.action.faire="allumage"</tag></item>
+	<item>éteint<tag>out.action.faire="extinction"</tag></item>
+    </one-of>
+
+	<one-of>
+	<item>le home cinéma<tag>out.action.code="0000 006C 0000 0022 00AB 00AB 0016 0040 0016 003F 0016 0015 0016 0015 0016 0015 0016 0014 0016 0040 0016 0014 0016 0040 0016 003F 0016 0015 0016 0014 0016 0040 0016 0014 0016 0040 0016 0014 0016 0040 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 003F 0016 0040 0016 003F 0016 0040 0016 003F 0016 0040 0016 003F 0016 06E3";out.action.surquoi="du home cinéma"</tag></item>
+	<item>la télé<tag>out.action.code="0000 006C 0000 0022 00AB 00AB 0016 0040 0016 003F 0016 0040 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0040 0016 003F 0016 0040 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0040 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0015 0016 0040 0016 0015 0016 0040 0016 003F 0016 0040 0016 003F 0016 0040 0016 003F 0016 0714";out.action.surquoi="de la télé"</tag></item>
+    </one-of>
+	
+<tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/usbuirt";</tag>
+  </rule>
+</grammar>
