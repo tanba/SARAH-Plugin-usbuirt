@@ -4,7 +4,7 @@ exports.action = function(data, callback, config){
  var commande = data.code;
  var resultat = data.faire;
  resultat += ' ' + data.surquoi;
- var process = '%CD%/plugins/usbuirt/bin/uutx.exe'; 
+ var process = '%CD%/plugins/usbuirt/uutx.exe'; 
  process +=  ' "'+ commande + '"';
  
  var child = exec(process,
